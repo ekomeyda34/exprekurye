@@ -343,4 +343,72 @@ footer {
         height: 45px;
         font-size: 1.3em;
     }
+
 }
+/* ================================================= */
+/* İSTENEN WHATSAPP VE ARAMA BUTONU STİLLERİ BAŞLANGIÇ */
+/* ================================================= */
+
+/* Sabit İletişim Butonları Alanı - Yan Yana Hizalama */
+.contact-buttons {
+    /* Butonları ekranın sağ alt köşesinde sabitler */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    /* Butonları yan yana hizalamak için Flexbox kullanılır */
+    display: flex;
+    /* Butonlar arasına boşluk ekler */
+    gap: 15px; 
+    z-index: 1000; /* Diğer elementlerin üzerinde görünmesini sağlar */
+}
+
+/* Tek Bir Butonun Ortak Stili */
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Buton genişliği */
+    height: 60px; /* Buton yüksekliği */
+    border-radius: 50%; /* Yuvarlak buton şekli */
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+    
+    /* HAREKET VE RENK GEÇİŞİ İÇİN TEMEL AYAR (0.3 saniye yumuşak geçiş) */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* WhatsApp Butonuna Özel Renk */
+.whatsapp-btn {
+    background-color: #25D366; /* WhatsApp yeşili */
+}
+
+/* Telefon Butonuna Özel Renk */
+.call-btn {
+    background-color: #007bff; /* Mavi (Hızlı kurye algısı için ideal) */
+}
+
+/* HAREKET EFEKTİ: Butonların Üzerine Gelindiğinde (Hover) */
+.contact-btn:hover {
+    /* Butonu 5 piksel yukarı kaydırır (HAFİF YÜKSELME EFEKTİ) */
+    transform: translateY(-5px); 
+    
+    /* Gölgeyi güçlendirerek yükselme hissini artırır */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); 
+}
+
+/* WhatsApp Butonunun Hover Renk Değişimi */
+.whatsapp-btn:hover {
+    background-color: #128C7E; /* Koyu WhatsApp yeşili */
+}
+
+/* Telefon Butonunun Hover Renk Değişimi */
+.call-btn:hover {
+    background-color: #0056b3; /* Koyu Mavi */
+}
+
+/* ================================================= */
+/* İSTENEN WHATSAPP VE ARAMA BUTONU STİLLERİ SONU */
+/* ================================================= */
