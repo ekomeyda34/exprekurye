@@ -1,0 +1,346 @@
+/* GENEL AYARLAR VE SIFIRLAMA */
+:root {
+    --primary-color: #ff3c00; /* Kurye Kırmızı/Turuncu */
+    --secondary-color: #007bff; /* Mavi (Hız ve Güven) */
+    --text-color: #333;
+    --bg-color: #f8f8f8;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding-top: 60px; /* Sabit header için boşluk */
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER VE NAVİGASYON */
+header {
+    background-color: #fff;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links a {
+    color: var(--text-color);
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* ANA İÇERİK BÖLÜMLERİ */
+section, .city-seo-area, .seo-text {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* İLÇE DETAY SAYFASI ÖZEL STİLLERİ */
+.district-detail ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.district-detail ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.95em;
+}
+
+.district-detail ul li i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/* HESAPLAMA ALANI STİLLERİ */
+#hesaplama {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#hesaplama h2 {
+    color: #fff;
+}
+
+#hesaplama input {
+    padding: 12px;
+    margin: 10px;
+    width: 90%;
+    max-width: 350px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#hesaplama button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#hesaplama button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* TÜM İLÇELER SEO LİSTESİ STİLLERİ */
+.city-seo-area {
+    padding: 30px;
+    border-top: 5px solid var(--secondary-color);
+}
+
+.city-seo-area h3 {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.city-seo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.city-seo-list a {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+
+.city-seo-list a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* SABİT İLETİŞİM BUTONLARI (MOBİL ÖNCELİKLİ) */
+.contact-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+}
+
+.call-btn {
+    background-color: var(--primary-color);
+}
+
+/* ************************************** */
+/* MOBİL UYUMLULUK (RESPONSIVE MEDIA QUERIES) */
+/* ************************************** */
+
+@media (max-width: 768px) {
+    /* Genel Ayarlar */
+    body {
+        padding-top: 50px; /* Mobil header boyutu */
+    }
+
+    /* Header ve Navigasyon */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: none; /* Navigasyonu mobilde gizle, hamburger menü kullanılabilir */
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    /* Gerekirse: Mobil menü butonu eklemek için HTML ve JS gerekir. Şimdilik menüyü gizli tutuyoruz. */
+    /* .nav-links a {
+        margin: 5px 0;
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    } */
+
+    /* İçerik ve Başlıklar */
+    section, .city-seo-area {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    /* Hesaplama Alanı */
+    #hesaplama {
+        padding: 30px 15px;
+    }
+
+    #hesaplama input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #hesaplama button {
+        width: 100%;
+    }
+
+    /* SEO Link Listesi */
+    .city-seo-list {
+        justify-content: center; /* Linkleri ortalar */
+    }
+
+    .city-seo-list a {
+        flex-grow: 1; /* Küçük ekranlarda daha fazla yer kaplar */
+        text-align: center;
+        font-size: 0.85em;
+        padding: 6px 10px;
+    }
+
+    /* Sabit İletişim Butonları */
+    .contact-buttons {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .contact-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3em;
+    }
+}
